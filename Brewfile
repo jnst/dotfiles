@@ -7,6 +7,7 @@ tap caskroom/homebrew-cask || true
 #tap homebrew/binary || true
 
 # Basic Command
+install brew-cask
 install git curl wget 
 
 # Application
