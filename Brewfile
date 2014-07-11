@@ -6,9 +6,9 @@ tap caskroom/homebrew-cask || true
 #caskroom/homebrew-versions || true
 #tap homebrew/binary || true
 
-# Basic Command
+# Basic
+install git curl wget
 install brew-cask
-install git curl wget 
 
 # Application
 cask install alfred
@@ -17,6 +17,7 @@ cask install appcleaner
 cask install dropbox
 cask install google-chrome
 cask install google-japanese-ime
+cask install keka
 cask install onepassword
 cask install skitch
 cask install sublime-text
