@@ -17,6 +17,7 @@ cask install appcleaner
 cask install dropbox
 cask install google-chrome
 cask install google-japanese-ime
+cask install hipchat
 cask install keka
 cask install onepassword
 cask install skitch
