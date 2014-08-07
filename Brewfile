@@ -16,6 +16,7 @@ cask alfred link
 cask install appcleaner
 cask install dropbox
 cask install google-chrome
+cask install google-drive
 cask install google-japanese-ime
 cask install hipchat
 cask install keka
