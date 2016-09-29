@@ -1,0 +1,30 @@
+tap 'caskroom/cask'
+tap 'caskroom/versions'
+tap 'homebrew/bundle'
+tap 'homebrew/core'
+brew 'go'
+brew 'mas'
+brew 'mysql'
+# brew 'nodebrew'
+brew 'rbenv'
+brew 'redis'
+cask '1password'
+cask 'appcleaner'
+cask 'atom'
+cask 'docker-toolbox'
+cask 'google-chrome'
+cask 'google-chrome-canary'
+cask 'google-drive'
+cask 'google-japanese-ime'
+cask 'intellij-idea'
+cask 'kindle'
+cask 'rubymine'
+cask 'sequel-pro'
+cask 'sourcetree'
+cask 'webstorm'
+cask 'zeplin'
+mas 'Alfred (1.2)', id: 405843582
+mas 'Blackmagic Disk Speed Test (3.0)', id: 425264550
+mas 'Slack (2.0.3)', id: 803453959
+mas 'Skitch (2.7.8)', id: 425955336
+mas 'Xcode (8.0)', id: 497799835
