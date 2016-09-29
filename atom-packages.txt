@@ -1,0 +1,7 @@
+atom-beautify@0.29.12
+editorconfig@1.4.1
+file-icons@1.7.19
+firewatch-syntax@1.0.1
+language-protobuf@0.7.0
+synced-sidebar@0.4.3
+tree-view-search-bar@0.0.2
