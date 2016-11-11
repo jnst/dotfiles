@@ -1,29 +1,43 @@
-set nocompatible
+" ================ General Config ====================
+set encoding=utf-8
+set autoread
 
-filetype on
-syntax on
+" ================ Editor Display ====================
+set number
+set title
+set ruler
+set cursorline
+set nowrap
+set showcmd
+set showmode
+set showmatch
+set laststatus=2
 
-au BufNewFile,BufRead *.scala set filetype=scala
+" ================ Turn Off Swap Files ===============
+set noswapfile
+set nowritebackup
+set nobackup
 
-set tabstop=4 shiftwidth=4 softtabstop=0
-set autoindent smartindent
+" ================ Indentation =======================
+set tabstop=2
+set shiftwidth=2
+set softtabstop=0
+set noautoindent
+set smartindent
+set smarttab
 
-set enc=utf-8
-set fenc=utf-8
-set fencs=utf-8
-
+" ================ Search ============================
 set wrapscan
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
 
-set nobackup
-set autoread
+" ================ Mouse =============================
+set mouse=a
+set ttymouse=xterm2
 
-set number
-set showmode
-set title
-set ruler
-set showcmd
-set showmatch
-set laststatus=2
-set wrap
+" ================ Color Scheme ======================
+colorscheme zellner
+syntax on
+filetype on
