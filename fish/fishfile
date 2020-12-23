@@ -1,6 +1,7 @@
 fisherman/await
 fisherman/fzf
 decors/fish-ghq
+evanlucas/fish-kubectl-completions
 fisherman/last_job_id
 fisherman/pyenv
 fisherman/rbenv
