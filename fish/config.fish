@@ -11,6 +11,10 @@ set -gx GOENV_ROOT $HOME/.goenv
 set -gx PATH $GOENV_ROOT/bin $PATH
 eval (goenv init - | source)
 
+# google-cloud-sdk
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+
+
 alias history "history --show-time='%Y-%m-%d %T '"
 alias ll "ls -AlhF"
 alias k "kubectl"
