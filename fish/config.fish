@@ -4,12 +4,19 @@ set -gx LSCOLORS gxfxcxdxbxegedabagacad
 # golang
 set -gx GOBIN $HOME/go/bin
 set -gx PATH $GOBIN $PATH
+
+# ghq
 set -gx GHQ_ROOT $HOME/go
 
 # goenv
 set -gx GOENV_ROOT $HOME/.goenv
 set -gx PATH $GOENV_ROOT/bin $PATH
+set -gx GOENV_DISABLE_GOROOT 1
+set -gx GOENV_DISABLE_GOPATH 1
 eval (goenv init - | source)
+
+# JDK
+set -g fish_user_paths "/usr/local/opt/openjdk/bin" $fish_user_paths
 
 # google-cloud-sdk
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
