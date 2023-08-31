@@ -1,6 +1,9 @@
 # ls color
 set -gx LSCOLORS gxfxcxdxbxegedabagacad
 
+# HomeBrew
+eval (/opt/homebrew/bin/brew shellenv)
+
 # golang
 set -gx GOBIN $HOME/go/bin
 set -gx PATH $GOBIN $PATH
