@@ -6,14 +6,14 @@ eval (/opt/homebrew/bin/brew shellenv)
 
 # golang
 set -gx GOBIN $HOME/go/bin
-set -gx PATH $GOBIN $PATH
+fish_add_path $GOBIN
 
 # ghq
 set -gx GHQ_ROOT $HOME/go
 
 # goenv
 set -gx GOENV_ROOT $HOME/.goenv
-set -gx PATH $GOENV_ROOT/bin $PATH
+fish_add_path $GOENV_ROOT/bin
 set -gx GOENV_DISABLE_GOROOT 1
 set -gx GOENV_DISABLE_GOPATH 1
 eval (goenv init - | source)
