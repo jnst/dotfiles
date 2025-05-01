@@ -11,13 +11,6 @@ fish_add_path $GOBIN
 # ghq
 set -gx GHQ_ROOT $HOME/go
 
-# goenv
-set -gx GOENV_ROOT $HOME/.goenv
-fish_add_path $GOENV_ROOT/bin
-set -gx GOENV_DISABLE_GOROOT 1
-set -gx GOENV_DISABLE_GOPATH 1
-eval (goenv init - | source)
-
 # JDK
 set -g fish_user_paths "/usr/local/opt/openjdk/bin" $fish_user_paths
 
