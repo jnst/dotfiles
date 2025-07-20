@@ -53,7 +53,8 @@ IF [condition/event]が発生した場合 THEN [system_name]は[expected_behavio
 
 **User Story: {{user_story}}
 
-- Acceptance Criteria
+### Acceptance Criteria
+
 - {{acceptance_criteria1}}
 - {{acceptance_criteria2}}
 ```
