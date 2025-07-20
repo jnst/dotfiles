@@ -1,5 +1,9 @@
-# ls color
-set -gx LSCOLORS gxfxcxdxbxegedabagacad
+if status is-interactive
+  set -gx LSCOLORS gxfxcxdxbxegedabagacad
+  alias history "history --show-time='%Y-%m-%d %T '"
+  alias ll "ls -Alh"
+  alias k "kubectl"
+end
 
 # HomeBrew
 eval (/opt/homebrew/bin/brew shellenv)
@@ -11,18 +15,11 @@ fish_add_path $GOBIN
 # ghq
 set -gx GHQ_ROOT $HOME/go
 
-# JDK
-set -g fish_user_paths "/usr/local/opt/openjdk/bin" $fish_user_paths
+# Added by Windsurf
+fish_add_path /Users/jnst/.codeium/windsurf/bin
 
-# google-cloud-sdk
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
-
-alias history "history --show-time='%Y-%m-%d %T '"
-alias ll "ls -AlhF"
-alias k "kubectl"
-
-
-# tabtab source for packages
-# uninstall by removing these lines
-[ -f ~/.config/tabtab/__tabtab.fish ]; and . ~/.config/tabtab/__tabtab.fish; or true
+string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)
