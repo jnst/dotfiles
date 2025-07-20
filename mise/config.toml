@@ -1,6 +1,7 @@
 [tools]
-go = '1.24'
 node = '22'
-'npm:@anthropic-ai/claude-code' = 'latest'
-'npm:@openai/codex' = 'latest'
 'npm:pnpm' = '10'
+'npm:@openai/codex' = 'latest'
+'npm:@anthropic-ai/claude-code' = 'latest'
+go = '1.24'
+bun = "1.2"
