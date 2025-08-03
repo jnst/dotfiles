@@ -1,6 +1,6 @@
 ---
 allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*), Bash(git diff:*), Bash(git branch:*), Bash(git log:*)
-description: Create a git commit
+description: Create and execute a git commit with angular conventional commit
 ---
 
 ## Context
@@ -12,7 +12,19 @@ description: Create a git commit
 
 ## Your task
 
-You must format all commit messages using the Angular Conventional Commit format with an additional `prompt` field. Follow this exact structure:
+You will create and execute a git commit. Follow these steps in order:
+
+### Step 1: Analyze Changes
+Review the git status and diff output to understand what changes need to be committed.
+
+### Step 2: Stage Changes (if needed)
+If there are unstaged changes that should be committed, stage them using:
+```bash
+git add <files>
+```
+
+### Step 3: Create Commit Message
+Format the commit message using Angular Conventional Commit format with a `prompt` field:
 
 ```
 <type>[optional scope]: <description>
@@ -24,38 +36,42 @@ prompt: <prompt>
 [optional footer]
 ```
 
-## Format Requirements:
-
+**Format Requirements:**
 - **type**: Use one of: feat, fix, docs, style, refactor, test, chore, build, ci, perf, revert
 - **scope**: Optional. Indicates the area of change (e.g., auth, ui, api)
 - **description**: Brief summary of the change in present tense
 - **prompt**: Required. The original prompt or instruction that led to this change
-- **body**: Optional. Detailed explanation of what and why  (MUST be written in Japanese)
+- **body**: Optional. Detailed explanation of what and why
 - **footer**: Optional. Breaking changes, issue references, etc.
 
-## Examples:
+### Step 4: Execute the Commit
 
-```
-feat(auth): add OAuth2 login integration
+Simple commit (no body):
+```bash
+git commit -m "docs: fix typo in README
 
-prompt: Add Google OAuth login to the application
-
-- Google OAuth2認証フローをトークンリフレッシュ機能付きで実装
-- ユーザープロファイルの取得とセッション管理も含まれます
-
-Closes #123
+prompt: READMEの誤字を修正して"
 ```
 
-```
-fix: resolve memory leak in data processing
+Standard commit (with body):
+```bash
+git commit -m "fix(api): resolve data validation error
 
-prompt: Fix the memory issue in the data processor
-```
+prompt: バリデーションエラーを修正して
 
-```
-docs: update installation instructions
-
-prompt: Update the README with clearer setup steps
+- Fix null pointer exception in user input validation
+- Add proper error handling for edge cases"
 ```
 
-**Important**: Always include the `prompt:` field at the end of every commit message. This field should contain the original request or instruction that prompted the change.
+Complex commit (with body and footer):
+```bash
+git commit -m "refactor(ui): simplify component structure
+
+prompt: ナビゲーションコンポーネントを簡潔にして
+
+- Split existing navigation component for better readability
+- Remove unnecessary props to improve performance
+
+BREAKING CHANGE: Navigation props interface has changed
+Closes #123"
+```
