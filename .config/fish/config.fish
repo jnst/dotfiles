@@ -12,9 +12,6 @@ eval (/opt/homebrew/bin/brew shellenv)
 set -gx GOBIN $HOME/go/bin
 fish_add_path $GOBIN
 
-# ghq
-set -gx GHQ_ROOT $HOME/go
-
 # Added by Windsurf
 fish_add_path /Users/jnst/.codeium/windsurf/bin
 
