@@ -1,7 +1,31 @@
 [tools]
-node = '22'
-'npm:pnpm' = '10'
-'npm:@openai/codex' = 'latest'
-'npm:@anthropic-ai/claude-code' = 'latest'
-go = '1.24'
+# Core tools
 bun = "1.2"
+node = "22"
+go = "1.24"
+rust = "1.88"
+
+# Backends
+'npm:@anthropic-ai/claude-code' = "latest"
+'npm:@google/gemini-cli' = "latest"
+'npm:@qwen-code/qwen-code' = "latest"
+'npm:@openai/codex' = "latest"
+
+# Registry
+aws-cli = "latest"
+bat = "latest"
+fzf = "latest"
+gh = "latest"
+ghq = "latest"
+jj = "latest"
+kubectl = "latest"
+lazygit = "latest"
+pnpm = "10"
+ripgrep = "latest"
+terraform = "latest"
+uv = "latest"
+
+[settings]
+
+[settings.npm]
+bun = true
