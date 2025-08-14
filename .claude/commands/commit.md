@@ -48,17 +48,17 @@ prompt: <prompt>
 
 Standard commit (with body):
 ```bash
-git commit -m "feat(test): add CI-optimized test script"
+git commit -m "feat(test): add CI-optimized test script
 
 prompt: playwrightのテストをciで自動化するには？現在のコマンドではctrl+cを押さないと止まらない
 
 - Add test:e2e:ci script with --reporter=list for CI environments
-- Enables automatic termination without manual intervention
+- Enables automatic termination without manual intervention"
 ```
 
 Complex commit (with body and footer):
 ```bash
-git commit -m "refactor(data): unify tech stack experience field format"
+git commit -m "refactor(data): unify tech stack experience field format
 
 prompt: @tests/fixtures/techstack.json のyearsDisplayがおかしい、year/monthで区別すべき
 
