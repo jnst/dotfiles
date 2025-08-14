@@ -46,32 +46,26 @@ prompt: <prompt>
 
 ### Step 4: Execute the Commit
 
-Simple commit (no body):
-```bash
-git commit -m "docs: fix typo in README
-
-prompt: READMEの誤字を修正して"
-```
-
 Standard commit (with body):
 ```bash
-git commit -m "fix(api): resolve data validation error
+git commit -m "feat(test): add CI-optimized test script"
 
-prompt: バリデーションエラーを修正して
+prompt: playwrightのテストをciで自動化するには？現在のコマンドではctrl+cを押さないと止まらない
 
-- Fix null pointer exception in user input validation
-- Add proper error handling for edge cases"
+- Add test:e2e:ci script with --reporter=list for CI environments
+- Enables automatic termination without manual intervention
 ```
 
 Complex commit (with body and footer):
 ```bash
-git commit -m "refactor(ui): simplify component structure
+git commit -m "refactor(data): unify tech stack experience field format"
 
-prompt: ナビゲーションコンポーネントを簡潔にして
+prompt: @tests/fixtures/techstack.json のyearsDisplayがおかしい、year/monthで区別すべき
 
-- Split existing navigation component for better readability
-- Remove unnecessary props to improve performance
+- Replace inconsistent years/yearsDisplay fields with unified experience field
+- Support both years and months format (e.g., '6 years', '2 months')
+- Update CLAUDE.md documentation to reflect new data structure
 
-BREAKING CHANGE: Navigation props interface has changed
+BREAKING CHANGE: Techstack props interface has changed
 Closes #123"
 ```
