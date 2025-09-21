@@ -1,31 +1,35 @@
 [tools]
-# Core tools
+# core tools
 bun = "1.2"
 node = "22"
-go = "1.24"
-rust = "1.88"
+go = "1.25"
+rust = "1.89"
 
-# Backends
-'npm:@anthropic-ai/claude-code' = "latest"
-'npm:@google/gemini-cli' = "latest"
-'npm:@qwen-code/qwen-code' = "latest"
-'npm:@openai/codex' = "latest"
-
-# Registry
-aws-cli = "latest"
+# backends
+"npm:@anthropic-ai/claude-code" = "latest"
+"npm:@google/gemini-cli" = "latest"
+"npm:@qwen-code/qwen-code" = "latest"
+"npm:@openai/codex" = "latest"
+"npm:dev3000" = "latest"
+"npm:eas-cli" = "latest"
 bat = "latest"
+biome = "1.9.4"
 fzf = "latest"
 gh = "latest"
 ghq = "latest"
 jj = "latest"
-kubectl = "latest"
 lazygit = "latest"
+nim = "1.6"
 pnpm = "10"
 ripgrep = "latest"
-terraform = "latest"
+starship = "latest"
+tokei = "latest"
 uv = "latest"
+eza = "latest"
 
 [settings]
+idiomatic_version_file_enable_tools = ["node"]
 
 [settings.npm]
 bun = true
+

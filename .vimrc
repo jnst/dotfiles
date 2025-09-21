@@ -3,13 +3,13 @@ set encoding=utf-8
 set autoread
 
 " ================ Editor Display ====================
+syntax on
 set number
 set title
 set ruler
 set cursorline
 set nowrap
 set showcmd
-set showmode
 set showmatch
 set laststatus=2
 
@@ -22,7 +22,7 @@ set nobackup
 set tabstop=2
 set shiftwidth=2
 set softtabstop=0
-set noautoindent
+set autoindent
 set smartindent
 set smarttab
 
@@ -33,11 +33,3 @@ set hlsearch
 set ignorecase
 set smartcase
 
-" ================ Mouse =============================
-set mouse=a
-set ttymouse=xterm2
-
-" ================ Color Scheme ======================
-colorscheme zellner
-syntax on
-filetype on
